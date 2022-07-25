@@ -32,7 +32,7 @@
 ## Images
 
 <p align="center">
-<img src="assets/desktop.gif" width=600px>
+<img src="assets/desktop.gif" max-width=600px>
 </p>
 <br/>
 <p align="center">
