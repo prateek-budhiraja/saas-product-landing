@@ -209,6 +209,7 @@ header .right-head {
   }
 
   section.hero .hero-right h2 {
+    font-size: 2rem;
     text-align: left;
     margin-bottom: 20px;
   }
