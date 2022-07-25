@@ -206,4 +206,18 @@ header .right-head {
     text-align: left;
     margin-bottom: 20px;
   }
+
+  .cards {
+    padding: 30px 100px 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .cards h2 {
+    grid-column: span 4;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
 }
