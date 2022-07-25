@@ -4,6 +4,7 @@
   --purple: #5A20CB;
   --bluish: #5737D6;
   --pinkish: #9424F0;
+  --blue: #538FFB;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
 
 /* header */
 header {
-  height: 40vh;
+  height: 330px;
   background: linear-gradient(to right, var(--purple), var(--bluish));
 }
 
@@ -30,10 +31,46 @@ nav {
 
 nav img {
   width: 80px;
+  cursor: pointer;
 }
 
 nav .links {
   display: none;
+  gap: 1em;
+  align-items: center;
+}
+
+nav .links button {
+  padding: 8px 14px;
+  background-color: var(--blue);
+  border: 0;
+  color: #fff;
+}
+
+nav .links button:hover {
+  cursor: pointer;
+  padding: 8px 14px;
+  background-color: #fff;
+  border: 0;
+  color: var(--blue);
+}
+
+nav .links h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+nav .links h4:first-child {
+  font-weight: 400;
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-color: var(--pinkish);
+}
+
+nav .links h4:hover {
+  color: var(--blue);
+  cursor: pointer;
 }
 
 nav .menu-btn {
@@ -115,4 +152,44 @@ header .right-head {
 
 .cards .card img {
   width: 50px;
+}
+
+@media only screen and (min-width: 1080px) {
+  header {
+    height: fit-content;
+    padding: 20px;
+  }
+
+  nav .menu-btn {
+    display: none;
+  }
+
+  nav .links {
+    display: flex;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  .head-content {
+    display: flex;
+    align-items: center;
+  }
+
+  header .left-head {
+    width: 50%;
+  }
+
+  header .left-head h1 {
+    font-size: 3rem;
+
+  }
+
+  header .right-head {
+    padding-bottom: 40px;
+    display: inline-block;
+    width: 600px;
+  }
+
 }
