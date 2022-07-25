@@ -192,4 +192,18 @@ header .right-head {
     width: 600px;
   }
 
+  section.hero {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  section.hero .hero-left {
+    width: 50%;
+  }
+
+  section.hero .hero-right h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
