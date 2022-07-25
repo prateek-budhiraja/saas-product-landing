@@ -153,6 +153,11 @@ header .right-head {
 
 .cards .card img {
   width: 50px;
+  padding: 20px 0 0 0;
+}
+
+.cards .card p {
+  padding: 15px 0;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -222,12 +227,16 @@ header .right-head {
     margin-bottom: 30px;
   }
 
-  .card img {
-    padding-top: 30px;
+  .cards .card img {
+    padding-top: 35px;
     padding-bottom: 15px;
   }
 
   .card h4 {
     margin-bottom: 15px;
+  }
+
+  .cards .card p {
+    padding: 0px 0;
   }
 }
