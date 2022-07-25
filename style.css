@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap');
+
+:root {
+  --purple: #5A20CB;
+  --bluish: #5737D6;
+  --pinkish: #9424F0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header {
+  height: 40vh;
+  background: linear-gradient(to right, var(--purple), var(--bluish));
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav img {
+  width: 80px;
+}
+
+nav .links {
+  display: none;
+}
+
+nav .menu-btn {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* head content */
+header .left-head {
+  color: #fff;
+  padding: 40px 20px;
+}
+
+header .left-head h1 {
+  padding-bottom: 20px;
+}
+
+header .left-head p {
+  font-weight: 100;
+}
+
+header .right-head {
+  display: none;
+}
+
+/* Hero Section */
+
+.hero {
+  padding: 20px;
+}
+
+.hero .hero-right h2 {
+  text-align: center;
+  color: var(--purple);
+}
+
+.hero .hero-right .feature {
+  padding-top: 20px;
+}
+
+.hero .hero-right .feature i {
+  float: left;
+  margin-right: 10px;
+}
+
+.hero-right .feature:nth-child(2) i {
+  color: var(--purple);
+}
+
+.hero-right .feature:nth-child(3) i {
+  color: var(--pinkish);
+}
+
+.hero-right .feature:last-child i {
+  color: var(--bluish);
+}
+
+/* Last card section */
+.cards {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .7fr 1fr 1fr;
+  gap: 20px;
+}
+
+.cards h2 {
+  grid-column: span 2;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--purple);
+}
+
+.cards .card {
+  padding: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.cards .card img {
+  width: 50px;
+}
